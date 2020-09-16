@@ -47,7 +47,7 @@ There are no recovery installation instructions for this discontinued device.
 {%- endcapture -%}
 
 {%- if device.maintainers != empty %}
-1. Download the [LineageOS installation package](https://download.lineageos.org/{{ device.codename }}) that you would like to install or [build]({{ "devices/" | append: device.codename | append: "/build" | relative_url }}) the package yourself.
+1. Download the [LineageOS installation package](https://updater.oddsolutions.us/#/devices/{{ device.codename }}/builds) that you would like to install or [build]({{ "devices/" | append: device.codename | append: "/build" | relative_url }}) the package yourself.
 {%- else %}
 1. [Build]({{ "devices/" | append: device.codename | append: "/build" | relative_url }}) a LineageOS installation package.
 {%- endif %}
@@ -95,10 +95,10 @@ There are no recovery installation instructions for this discontinued device.
 {%- endif %}
 {%- else %}
 {%- if device.uses_twrp and device.is_ab_device != true %}
-8. _(Optionally)_: Root your device by installing [LineageOS' AddonSU](https://download.lineageos.org/extras), (use the `{{ userspace_architecture }}` package) or by using any other method you prefer.
+8. _(Optionally)_: Root your device by installing [LineageOS' AddonSU](https://updater.oddsolutions.us/#/extras), (use the `{{ userspace_architecture }}` package) or by using any other method you prefer.
 9. Once you have installed everything successfully, run 'adb reboot'.
 {%- else %}
-8. _(Optionally)_: Root your device by installing [LineageOS' AddonSU](https://download.lineageos.org/extras), (use the `{{ userspace_architecture }}` package) or by using any other method you prefer.
+8. _(Optionally)_: Root your device by installing [LineageOS' AddonSU](https://updater.oddsolutions.us/#/extras), (use the `{{ userspace_architecture }}` package) or by using any other method you prefer.
 9. Once you have installed everything successfully, click the back arrow in the top left of the screen, then "Reboot system now".
 {%- endif %}
 {%- endif %}

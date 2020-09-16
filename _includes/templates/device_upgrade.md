@@ -33,7 +33,7 @@ Additionally, open Settings, then "System", then "Developer Options", then selec
 The updater app does not support upgrades from one version of LineageOS to another, and will block installation to any update for a different version. Upgrading manually requires similar steps to installing LineageOS for the first time.
 
 {%- if device.maintainers != empty %}
-1. Download the [LineageOS install package](https://download.lineageos.org/{{ device.codename }}) that you'd like to install or [build]({{ "devices/" | append: device.codename | append: "/build" | relative_url }}) the package yourself.
+1. Download the [LineageOS install package](https://updater.oddsolutions.us/#/devices/{{ device.codename }}/builds) that you'd like to install or [build]({{ "devices/" | append: device.codename | append: "/build" | relative_url }}) the package yourself.
 {%- else %}
 1. [Build]({{ "devices/" | append: device.codename | append: "/build" | relative_url }}) a LineageOS install package.
 {%- endif %}
@@ -71,10 +71,10 @@ The updater app does not support upgrades from one version of LineageOS to anoth
 {% endif %}
 {% else %}
 {% if device.uses_twrp and device.is_ab_device != true %}
-7. _(Optionally)_: Root your device by installing [LineageOS' AddonSU](https://download.lineageos.org/extras), (use the `{{ userspace_architecture }}` package) or by using any other method you prefer.
+7. _(Optionally)_: Root your device by installing [LineageOS' AddonSU](https://updater.oddsolutions.us/#/extras), (use the `{{ userspace_architecture }}` package) or by using any other method you prefer.
 8. Once you have installed everything successfully, run `adb reboot`.
 {% else %}
-9. _(Optionally)_: Root your device by installing [LineageOS' AddonSU](https://download.lineageos.org/extras), (use the `{{ userspace_architecture }}` package) or by using any other method you prefer.
+9. _(Optionally)_: Root your device by installing [LineageOS' AddonSU](https://updater.oddsolutions.us/#/extras), (use the `{{ userspace_architecture }}` package) or by using any other method you prefer.
 10. Once you have installed everything successfully, click the back arrow in the top left of the screen, then "Reboot system now".
 {% endif %}
 {% endif %}
