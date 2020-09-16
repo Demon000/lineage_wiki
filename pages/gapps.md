@@ -30,6 +30,6 @@ These packages are only dependent on your OS version and architecture, which can
 
 ## Installation
 
-Google apps should be installed via recovery **immediately** after installing LineageOS. Exact steps vary, and as such, you should see your device's installation guide [here](https://wiki.lineageos.org/devices/) for specific instructions.
+Google apps should be installed via recovery **immediately** after installing LineageOS. Exact steps vary, and as such, you should see your device's installation guide [here](https://wiki.oddsolutions.us/devices/) for specific instructions.
 
 {% include alerts/important.html content="If you reboot into LineageOS before installing Google apps, you must factory reset and then install them, otherwise expect crashes." %}
