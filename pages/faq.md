@@ -4,6 +4,14 @@ title: Frequently Asked Questions
 permalink: faq.html
 ---
 
+## What is the difference between Odd Solutions builds and official LineageOS?
+ - There are a few major difference
+   - These builds have full GMS included as applicable (some legacy devices need a trimmed down version), so you don't need to flash GApps!
+   - LineageOS 16.0 builds have Pixel goodies as well as reverse-engineered SystemUIGoogle and SettingsGoogle implementations. LineageOS 17.1 builds just have the Pixel goodies.
+   - These builds are signed with Odd Solutions `dev-keys` as opposed to LineageOS's `release-keys`.
+   - Many of the devices supported here don't fully comply to charter, but are functional enough for daily use, and some can't support specific functions on official LineageOS, but can unofficially, so please read the noted on your device's specific page [here](https://wiki.oddsolutions.us/device).
+   - No warranty is impled or provided on any of this, consider these builds as testing builds at all time.
+
 ## Installing LineageOS zips in Recovery results in "Error 7"
  - The most common reasons for this error are:
    - You are trying to install a build for a different device. _You need to make sure you download the zip for the correct device *and* variant_

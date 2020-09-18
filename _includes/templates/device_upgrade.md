@@ -36,8 +36,7 @@ The updater app does not support upgrades from one version of LineageOS to anoth
 1. Download the [LineageOS install package](https://updater.oddsolutions.us/{{ device.codename }}) that you'd like to install or [build]({{ "devices/" | append: device.codename | append: "/build" | relative_url }}) the package yourself.
 {%- else %}
 1. [Build]({{ "devices/" | append: device.codename | append: "/build" | relative_url }}) a LineageOS install package.
-{%- endif %}
-    * Optionally, download an application package add-on such as [Google Apps]({{ "gapps.html" | relative_url }}) (use the `{{ userspace_architecture }}` architecture).
+{% endif %}
 2. Make sure your computer has working `adb`. Setup instructions can be found [here]({{ "adb_fastboot_guide.html" | relative_url }}).
 3. Enable [USB debugging]({{ "adb_fastboot_guide.html#setting-up-adb" | relative_url }}) on your device. {{ devOptions }}
 4. Run `adb reboot sideload`.
