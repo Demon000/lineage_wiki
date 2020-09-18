@@ -6,15 +6,18 @@ codename: foster
 cpu: Cortex-A57
 cpu_cores: '4'
 cpu_freq: 1.9 GHz
-current_branch: 15.1
+current_branch: 17.1
 download_boot: With the device powered off, tap <kbd>Power</kbd>, then hold <kbd>Power</kbd> until a menu is displayed.
 gpu: GM20B (Maxwell)
 image: foster.png
 install_method: fastboot_nexus
-kernel: android_kernel_nvidia_shield
-maintainers: []
+kernel: android_kernel_nvidia_linux-4.9_kernel_nvidia
+maintainers: [npjohnson, webgeek1234]
 name: Shield Android TV
 no_oem_unlock_switch: true
+note_content: LineageOS 17.1 builds for this device should be treated as beta releases at the moment, and are SELinux permissive.
+note_show: true
+note_title: LineageOS 17.1 Beta Builds
 peripherals: None
 ram: 3 GB
 recovery_boot: With the device powered off, tap <kbd>Power</kbd>, then hold <kbd>Power</kbd> until a menu is displayed.
@@ -32,5 +35,5 @@ type: Set top box
 uses_twrp: true
 vendor: Nvidia
 vendor_short: nvidia
-versions: [14.1, 15.1]
+versions: [14.1, 15.1, 16.0, 17.1]
 wifi: 802.11ac 2x2 Mimo 2.4 GHz and 5 GHz
