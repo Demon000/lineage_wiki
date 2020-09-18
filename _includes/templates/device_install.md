@@ -50,8 +50,7 @@ There are no recovery installation instructions for this discontinued device.
 1. Download the [LineageOS installation package](https://updater.oddsolutions.us/#/devices/{{ device.codename }}/builds) that you would like to install or [build]({{ "devices/" | append: device.codename | append: "/build" | relative_url }}) the package yourself.
 {%- else %}
 1. [Build]({{ "devices/" | append: device.codename | append: "/build" | relative_url }}) a LineageOS installation package.
-{%- endif %}
-    * Optionally, download an application package add-on such as [Google Apps]({{ "gapps.html" | relative_url }}) (use the `{{ userspace_architecture }}` architecture).
+{% endif %}
 2. If you are not in recovery, reboot into recovery:
     * {{ device.recovery_boot }}
     {% if device.vendor == "LG" %}
