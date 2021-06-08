@@ -8,7 +8,7 @@ codename: marlin
 cpu: Kryo
 cpu_cores: '4'
 cpu_freq: 2 x 2.15 GHz + 2 x 1.6 GHz
-current_branch: 17.1
+current_branch: 18.1
 custom_unlock_cmd: 'fastboot flashing unlock'
 depth: 8.5 mm (0.33 in)
 download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd>.
@@ -18,9 +18,12 @@ image: marlin.png
 install_method: fastboot_nexus
 is_ab_device: true
 kernel: android_kernel_google_marlin
-maintainers: [intervigil, razorloves]
+maintainers: [intervigil, razorloves, npjohnson]
 name: Pixel XL
 network: [2G GSM, 3G UMTS, 4G LTE]
+note_content: Due to incompatibilities with older proprietary binaries, IMS (VoLTE/ViLTE/WFC) and Sound Trigger (Screen-off "Hey Google" detection) are nonfunctional in LineageOS 18.1 builds.
+note_show: true
+note_title: IMS/Sound Trigger Support
 peripherals: [Fingerprint reader, Accelerometer, Gyroscope, Proximity sensor, Compass, GPS, GLONASS, Light sensor, Barometer, NFC]
 ram: 4 GB
 recovery_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd>. Then use the menu to select *Recovery Mode*.
@@ -36,6 +39,6 @@ tree: android_device_google_marlin
 type: phone
 vendor: Google
 vendor_short: google
-versions: [15.1, 16.0, 17.1]
+versions: [15.1, 16.0, 17.1, 18.1]
 width: 75.7 mm (2.98 in)
 wifi: 802.11 a/b/g/n/ac, Wi-Fi Direct, Hotspot
